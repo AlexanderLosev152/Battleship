@@ -95,18 +95,131 @@
 // console.log("Happy Bithday dear " + name + ",");
 // console.log("Happy Bithday to you.");
 
-let word = "botless";
-let count = 99;
-while (count > 0) {
-  console.log(count + " " + word + " of beer on the wall");
-  console.log(count + " " + word + " of beer");
-  console.log("Take one the down, pass it around,");
-  --count;
-  if (count === 0) {
-    console.log("No more" + " " + word + "  of beer on the wall");
-  }
-}
+// let word = "botless";
+// let count = 99;
+// while (count > 0) {
+//   console.log(count + " " + word + " of beer on the wall");
+//   console.log(count + " " + word + " of beer");
+//   console.log("Take one the down, pass it around,");
+//   --count;
+//   if (count === 0) {
+//     console.log("No more" + " " + word + "  of beer on the wall");
+//   }
+// }
 
 // три основных типа выражений - числовые,строковые и логические.
 // команды if/else используються для принятия решений в коде.
 // команды while/for для многократного выполнения команд в цикле.
+
+// console.log("Battleship");
+
+// let randomLoc = Math.floor(Math.random() * 5);
+// let location1 = randomLoc;
+// let location2 = location1 + 1;
+// let location3 = location2 + 1;
+// let guess; //кординаты выстрела
+// let hits = 0;
+// let guesses = 0;
+// let isSunk = false;
+
+// // пока корабль не будет потоплен
+// while (isSunk == false) {
+//   // получитить координаты выстрела
+//   // результаты выстрела присваиваються переменной guess
+//   guess = prompt("Готов, цель, огонь! (enter a number 0-6):");
+//   // проверяем коректность ввода.убедиться что значение в диапазоне от 0 до 6
+//   // результат будет true если значение меньше 0 или больше 6.
+//   // если выполниться хотябы одно из условий то значение будет некорректно
+//   if (guess < 0 || guess > 6) {
+//     // если пользователь ввел некоректное значение
+//     alert("Пожалуйста, введите действительный номер");
+//   } else {
+//     // если значение корректно то значение guesses увеличиваем на 1
+//     ++guesses;
+//     if (guess == location1 || guess == location2 || guess == location3) {
+//       alert("Попал!");
+//       ++hits;
+//       if (hits == 3) {
+//         isSunk = true;
+//         alert("Ты потопил мой линкор");
+//       }
+//     } else {
+//       alert("Мазила");
+//     }
+//   }
+// }
+
+// let stats =
+//   "Ты взял " +
+//   guesses +
+//   " попытки потопить линкор, " +
+//   "значит ваша точность стрельбы была " +
+//   3 / guesses;
+
+// alert(stats);
+
+// РАСПРОДАЖА
+
+// // сначала проверяем есть ли товар в наличии
+// if (inStock == true) {
+//   // проверяем участвует ли товар в распродаже
+//   if (onSale == true) {
+//     // если оба условия выполняються тогда покупаем
+//     alert("buy buy buy");
+//   }
+// }
+// // упрощаем код
+// // такой код читаеться лучше
+// if (inStock == true && onSale == true);
+// // этот код выполниться если оба условия true
+
+// if (inStock == true && (onSale == true || price < 60)) {
+//   alert("buy buy buy");
+// }
+// здесь операторы И и ИЛИ задесйтвованы в одном условном выражении.это выражение ознаяает следующее: если товар имееться в наличии и учавствует в распродаже,или цена меньше 60 -покупаем.
+
+// круглые скобки группируют условия,чтобы сначала был вычеслен результат операции ИЛИ ,а потом этот результат был использован для вычисления результата И.
+
+// if (inStock == true) {
+//   // в условиях if булевские пременные часто проверяються на истинность или ложность.
+// }
+
+// if (inStock) {
+//   // если просто указать логическую переменную саму по себе,т о в случае истинности это переменнойусловие тоже будет истинным,а блок будет выполнен.
+//   // а если переменная inStock ложна,то и условие ложно,и программный блок пропускаеться.
+// }
+
+// Math.random - получаем случайное число.- генерирует число от 0 до 1,не включая 1
+// Math.floor - округляет числа,отбрасывая дробную часть.
+// помните в ИЛИ для истинности всего выражения достаточно истинности одного условия.
+
+// ------------------------------------------------
+
+// ФУНКЦИИ
+
+let dogName = "rover";
+let dogWeigth = 23;
+
+let dog2 Name = "spot";
+let dog2Weigth = 13;
+
+let dog3Name = "spike";
+let dog3Weigth = 53;
+
+let dog4Name = "lady";
+let dog4Weigth = 17;
+
+function gav(dogName, dogWeigth) {
+  if (dogWeigth > 20) {
+    console.log(dogName + " says WOFF WOFF");
+  } else {
+    console.log(dogName + " says woof woof");
+  }
+}
+
+gav("rover");
+gav("spot");
+gav("spike");
+gav("lady");
+
+
