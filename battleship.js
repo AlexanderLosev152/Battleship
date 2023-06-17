@@ -84,7 +84,7 @@
 // все команды блока обр одну группу,которая выполняеться как единое целое.
 // например если while истинно то выполняються все команды в блоке.
 // это относиться и к блокам if и else.
-// любая переменная которая содержит не пустую строку считаеться истинной,а переменной которой значени не присвоено считаеться ложью.
+// любая переменная которая содержит не пустую строку считаеться истинной,а переменной которой значение не присвоено считаеться ложью.
 
 // let name = "Joe";
 // let i = 0;
@@ -197,29 +197,126 @@
 
 // ФУНКЦИИ
 
-let dogName = "rover";
-let dogWeigth = 23;
+// function gav(dogName, dogWeigth) {
+//   if (dogWeigth > 20) {
+//     console.log(dogName + " says WOFF WOFF");
+//   } else {
+//     console.log(dogName + " says woof woof");
+//   }
+// }
 
-let dog2 Name = "spot";
-let dog2Weigth = 13;
+// gav("rover", 23);
+// gav("spot", 13);
+// gav("spice", 5);
+// gav("lady", 17);
 
-let dog3Name = "spike";
-let dog3Weigth = 53;
+// -------------
 
-let dog4Name = "lady";
-let dog4Weigth = 17;
+// function whatShallWear(temp) {
+//   if (temp < 60) {
+//     console.log("Wear t-shirt");
+//   } else if (temp < 70) {
+//     console.log("Wear a Jacket");
+//   } else {
+//     console.log("Wear of sweather");
+//   }
+// }
 
-function gav(dogName, dogWeigth) {
-  if (dogWeigth > 20) {
-    console.log(dogName + " says WOFF WOFF");
-  } else {
-    console.log(dogName + " says woof woof");
+// whatShallWear(60);
+// whatShallWear(50);
+// whatShallWear(80);
+
+// -------------
+
+// function addOne(x) {
+//   console.log((x = 5));
+// }
+// addOne();
+
+// -------------
+
+// function bake(degrees) {
+//   let message;
+
+//   if (degrees > 500) {
+//     message = "I`m not a nuclear reactor!";
+//   } else if (degrees < 100) {
+//     message = "I`m not a refrigerator!";
+//   } else {
+//     message = "That`s a very comfortable temperature for me.";
+//     setMode("bake");
+//     setTemp(degrees);
+//   }
+//   return message;
+// }
+
+// let statusB = bake(350);
+// console.log(statusB);
+
+// ----------
+
+// let radius = 5.2;
+// function calc(r) {
+//   if (r <= 0) {
+//     return 0;
+//   } else {
+//     area = Math.PI * r * r;
+//     return area;
+//   }
+// }
+
+// let theArea = calc(radius);
+// console.log("The area is " + theArea);
+// console.log("go");
+
+// -----------
+
+// let avatar = "generic";
+// let skill = 1.0;
+// let pointsPerLevel = 1000;
+// let userPoints = 2008;
+
+// function getAvatar(points) {
+//   let level = points / pointsPerLevel;
+
+//   if (level == 0) {
+//     return "Teddy bear";
+//   } else if (level == 1) {
+//     return "Cat";
+//   } else if (level >= 2) {
+//     return "Gorilla";
+//   }
+// }
+
+// function updatePoints(bonus, newPoints) {
+//   let i = 0;
+//   while (i < bonus) {
+//     newPoints = newPoints + skill * bonus;
+//     i = i + 1;
+//   }
+//   return newPoints + userPoints;
+// }
+
+// userPoints = updatePoints(2, 100);
+// avatar = getAvatar(2112);
+
+//  console.log(userPoints);
+//  console.log(avatar);
+
+// --------------
+
+let points = 555;
+function playTurn(player, location) {
+  let points = 0;
+  if (location == 1) {
+    points = points + 100;
   }
+  return points;
 }
 
-gav("rover");
-gav("spot");
-gav("spike");
-gav("lady");
+let total = playTurn("Jay", 1);
+alert(points);
+console.log(total);
 
 
+// js не обращает внимание на то,где обьявляеться функция 
