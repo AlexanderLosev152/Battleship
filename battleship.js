@@ -305,18 +305,243 @@
 
 // --------------
 
-let points = 555;
-function playTurn(player, location) {
-  let points = 0;
-  if (location == 1) {
-    points = points + 100;
-  }
-  return points;
-}
+// let points = 555;
+// function playTurn(player, location) {
+//   let points = 0;
+//   if (location == 1) {
+//     points = points + 100;
+//   }
+//   return points;
+// }
 
-let total = playTurn("Jay", 1);
-alert(points);
-console.log(total);
+// let total = playTurn("Jay", 1);
+// alert(points);
+// console.log(total);
 
+// ------------
 
-// js не обращает внимание на то,где обьявляеться функция 
+// js не обращает внимание на то,где обьявляеться функция- до или после ее использованния.
+
+// let radius = 2;
+// let area = circleArea(radius);
+// alert(area);
+
+// function circleArea(r) {
+//   let a = Math.PI * r * r;
+//   return a;
+// }
+
+// console.log(area);
+
+// ------------
+
+// let balanse = 10500;
+// let cameraOn = true;
+
+// function steal(balanse, amount) {
+//   cameraOn = false;
+//   if (amount < balanse) {
+//     balanse = balanse - amount;
+//   }
+//   return amount;
+//   cameraOn = true;
+// }
+
+// let amount = steal(balanse, 1250);
+// alert("Criminal: you stole " + amount + "!");
+
+// все строки после ф-ии return и игнорируються
+
+// МАССИВЫ
+
+// массив js - это тип способный хранить несколько однотипных значений.
+// в отлиции от переменной массив может хранить в себе как сторку так и число и булевые значения и т.д. и т.п.
+// элементы массива разделяються запятыми.
+// индексы массивов начинаються с 0.
+// каждый элемент массива обладает индексом-ключом.
+
+// let scores = [60, 50, 60, 58, 54, 54, 58, 50, 52, 54];
+// console.log("Solution 2 producted " + scores[0] + " bubles");
+// console.log("Solution 2 producted " + scores[1] + " bubles");
+// console.log("Solution 2 producted " + scores[2] + " bubles");
+// console.log("Solution 2 producted " + scores[3] + " bubles");
+// console.log("Solution 2 producted " + scores[4] + " bubles");
+// console.log("Solution 2 producted " + scores[5] + " bubles");
+
+// Обновление значений в массиве.
+
+// scores[0] = 1; // переназначаем 1й элемент
+// console.log("Solution 2 producted " + scores[0] + " bubles");
+
+// Сколько же элементов в массиве.
+
+// свойство length.
+// console.log(scores.length);// получаем 10
+
+// генератор случайных фраз
+// function makePharases() {
+//   let words1 = ["24/7", "multi-tier", "30,000 foot", "B-to-b", "win-win"];
+//   let words2 = ["emprowered", "value-added", "oriented", "focused", "aligned"];
+//   let words3 = ["process", "solution", "tipping-point", "strategy", "vision"];
+
+//   let rand1 = Math.floor(Math.random() * words1.length);
+//   let rand2 = Math.floor(Math.random() * words2.length);
+//   let rand3 = Math.floor(Math.random() * words3.length);
+
+//   let phrase = words1[rand1] + " " + words2[rand2] + " " + words3[rand3];
+//   console.log(phrase);
+// }
+// makePharases();
+
+// в масссивах могут храниться любые виды данных,да же обьекты.
+// js не требует,чтобы все значения в массиве относились к одному типу данных.
+// но насного проще и безопастнее хранить в массивах данные одного типа.
+// первый елемент массива всегда храниться с индексом 0.
+
+// let arr = [1, 2, 3];
+// console.log(arr[arr.length-1]);// получение последнего элемента массива.
+
+// отчет
+// let i = 0;
+// while (i < score.legth) {
+//   output = "Bubble solution #" + i + "score" + score[1];
+//   console.log(output);
+//   i++;
+// }
+
+// циrл for
+
+// let i = 0; - инициализация -переменной цикла - выполняеться один раз, до начала цикла for.
+// i < score.length; - проверка условия -она выполняеться при каждой итерации цикла.если условие окажеться ложным ,выполнеение цикла прерываеться.
+// i = i + 1 -- увеличение счетчика .происходит один раз за итерацию,после выполнения всех команд в теле цикла.
+
+// let scores = [
+//   60, 50, 58, 54, 54, 58, 50, 52, 54, 48, 69, 34, 55, 51, 52, 44, 51, 69, 64,
+//   66, 65, 55, 52, 61, 46, 31, 57, 52, 44, 18, 41, 53, 55, 61, 51, 44,
+// ];
+
+// let costs = [
+//   0.25, 0.27, 0.25, 0.25, 0.25, 0.25, 0.33, 0.31, 0.25, 0.29, 0.27, 0.22, 0.31,
+//   0.25, 0.25, 0.33, 0.21, 0.25, 0.25, 0.25, 0.28, 0.25, 0.24, 0.22, 0.2, 0.25,
+//   0.3, 0.25, 0.24, 0.25, 0.25, 0.25, 0.27, 0.25, 0.26, 0.29,
+// ];
+
+// function primAndGetHihgScore(scores) {
+//   let output;
+//   let highScore = 0;
+//   for (let i = 0; i < scores.length; i++) {
+//     output = "Bubble solution # " + i + " score " + scores[i];
+//     console.log(output);
+//     if (scores[i] > highScore) {
+//       highScore = scores[i];
+//     }
+//   }
+//   return highScore;
+// }
+
+// let highScore = primAndGetHihgScore(scores);
+// console.log("Bubbles tests: " + scores.length);
+// console.log("Highest bubble score " + highScore);
+
+// function getBestResults(scores, highScore) {
+//   let bestSolutions = [];
+//   for (let i = 0; i < scores.length; i++) {
+//     if (scores[i] == highScore) {
+//       bestSolutions.push(i);
+//     }
+//   }
+//   return bestSolutions;
+// }
+
+// let bestSolutions = getBestResults(scores, highScore);
+// console.log("Solutions with the highest score: " + bestSolutions);
+
+//оператор инкремента
+// i = i + 1; одно и тоже i++
+// оператор дикремента
+// i = i - 1; одно и тоже i--
+
+// function getMostCostEffectiveSolution(scores, costs, highScore) {
+//   let cost = 100;
+//   let index;
+//   for (let i = 0; i < scores.length; i++) {
+//     if (scores[i] == highScore) {
+//       if (cost > costs[i]) {
+//         index = i;
+//         cost = cost[i];
+//       }
+//     }
+//   }
+//   return index;
+// }
+
+// let getMostCostEffective = getMostCostEffectiveSolution(
+//   scores,
+//   costs,
+//   highScore
+// );
+// console.log(
+//   "Bubble Solution # " + getMostCostEffective + " is the most cost effective"
+// );
+
+// ОБЬЕКТЫ
+
+// обьекты заключаються в фитгурные скобки.
+// отделяйте имя свойства от значения двоеточием.
+// имя свойства может быть произвольной строкой.обычно в них используються имена переменных.
+// обьект не может содержать два свойства с одинаковыми именами.
+// пары имя/значение свойств разделябться запятой.
+
+// let chevy = {
+//   make: "Chevy",
+//   model: "Bel Air",
+//   year: 1957,
+//   color: "red",
+//   passengers: 2,
+//   convertible: false,
+//   mileage: 1021,
+// };
+
+// let fiat = {
+//   make: "Fiat",
+//   model: "500",
+//   year: 1957,
+//   color: "Medium Blue",
+//   passengers: 2,
+//   convertible: false,
+//   mileage: 88000,
+// };
+
+// fiat.color = "red";
+// fiat.needWashing = true;
+
+// console.log(chevy);
+// console.log(fiat);
+
+// if (fiat.year < 1995) {
+//   classic = true;
+// }
+
+// for (let i = 0; i < fiat.year; i++) {
+//   addPersonCar();
+// }
+
+let dog = {
+  name: "Fido",
+  weigth: 20.2,
+  age: 4,
+  breed: "mixed",
+  activity: "fetch balls",
+};
+
+dog.bark = "woff woff"; // добавление свойства
+delete dog.bark; // удаление свойства
+console.log(dog);
+// let bark;
+// if (weigth > 20) {
+//   bark: "WOOF WOOF";
+// }else {
+//   bark: "woof woof"
+// }
+// let speak = dog.name + "says" + dog.weigth + " when he wants to " + dog.bark;
+// console.log(speak);
