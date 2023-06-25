@@ -526,19 +526,19 @@
 //   addPersonCar();
 // }
 
-let dog = {
-  name: "Fido",
-  weigth: 20.2,
-  age: 4,
-  breed: "mixed",
-  activity: "fetch balls",
-};
+// let dog = {
+//   name: "Fido",
+//   weigth: 20.2,
+//   age: 4,
+//   breed: "mixed",
+//   activity: "fetch balls",
+// };
 
-function loseWeight(dog, amount) {
-  dog.weigth = dog.weigth - amount;
-}
-loseWeight(dog , 10);
-console.log(dog.name + " now weigth " + dog.weigth);
+// function loseWeight(dog, amount) {
+//   dog.weigth = dog.weigth - amount;
+// }
+// loseWeight(dog , 10);
+// console.log(dog.name + " now weigth " + dog.weigth);
 // dog.bark = "woff woff"; // добавление свойства
 // delete dog.bark; // удаление свойства
 // console.log(dog);
@@ -551,64 +551,64 @@ console.log(dog.name + " now weigth " + dog.weigth);
 // let speak = dog.name + "says" + dog.weigth + " when he wants to " + dog.bark;
 // console.log(speak);
 
-let taxi = {
-  make: "Webville Motors",
-  model: "Taxi",
-  year: 1955,
-  color: "yellow",
-  passengers: 4,
-  convertible: false,
-  mileage: 281341,
-};
+// let taxi = {
+//   make: "Webville Motors",
+//   model: "Taxi",
+//   year: 1955,
+//   color: "yellow",
+//   passengers: 4,
+//   convertible: false,
+//   mileage: 281341,
+// };
 
-let cadi = {
-  make: "GM",
-  model: "Cadillac",
-  year: 1955,
-  color: "tan",
-  passengers: 5,
-  convertible: false,
-  mileage: 12892,
-};
+// let cadi = {
+//   make: "GM",
+//   model: "Cadillac",
+//   year: 1955,
+//   color: "tan",
+//   passengers: 5,
+//   convertible: false,
+//   mileage: 12892,
+// };
 
-let fiat = {
-  make: "FiaT",
-  model: "500",
-  year: 1957,
-  color: "Medium Blue",
-  passengers: 2,
-  convertible: false,
-  mileage: 88000,
-};
+// let fiat = {
+//   make: "FiaT",
+//   model: "500",
+//   year: 1957,
+//   color: "Medium Blue",
+//   passengers: 2,
+//   convertible: false,
+//   mileage: 88000,
+// };
 
-let chevy = {
-  make: "Chevy",
-  model: "Bel Air",
-  year: 1957,
-  color: "red",
-  passengers: 2,
-  convertible: false,
-  mileage: 1021,
-};
+// let chevy = {
+//   make: "Chevy",
+//   model: "Bel Air",
+//   year: 1957,
+//   color: "red",
+//   passengers: 2,
+//   convertible: false,
+//   mileage: 1021,
+// };
 
-function prequal(car) {
-  if (car.mileage > 10000) {
-    return false;
-  } else if (car.year > 1960) {
-    return false;
-  }
-  return true;
-}
+// function prequal(car) {
+//   if (car.mileage > 10000) {
+//     return false;
+//   } else if (car.year > 1960) {
+//     return false;
+//   }
+//   return true;
+// }
 
-console.log(prequal(taxi));
-console.log(prequal(cadi));
-console.log(prequal(fiat));
-console.log(prequal(chevy));
+// console.log(prequal(taxi));
+// console.log(prequal(cadi));
+// console.log(prequal(fiat));
+// console.log(prequal(chevy));
 
-let worthALook = prequal(taxi);
+// let worthALook = prequal(taxi);
 
-if (worthALook) {
-  console.log("You gotta check out this " + taxi.make + " " + taxi.model);
-} else {
-  console.log("You should really pass on the " + taxi.make + " " + taxi.model);
+// if (worthALook) {
+//   console.log("You gotta check out this " + taxi.make + " " + taxi.model);
+// } else {
+//   console.log("You should really pass on the " + taxi.make + " " + taxi.model);
 }

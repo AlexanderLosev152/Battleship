@@ -6,67 +6,66 @@
   text-decoration: none;
 }
 
+:root {
+  --main-bg: #eee;
+  --main-font: #fff;
+}
+
 body {
   color: black;
-  font-family: sans-serif;
-  font-size: 16px;
+  background: #709b90;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: calc(0.2em + 1vw);
+  line-height: 1.2;
+  margin-top: 1.5em;
 }
 
 .container {
+  max-width: 70%;
   margin: 0 auto;
-  padding: 0 150px;
+}
+.site-nav {
+  display: flex;
+  gap: 1.5em;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  background: #5f4b44;
 }
 
-.page-header {
-  font-size: 1em;
-}
-.title {
-  color: #2f2f2f;
-  margin-bottom: 10px;
-  font-size: 3em;
-}
-.nav {
-  padding-bottom: 10px;
-}
-
-.nav li {
-  display: inline-block;
-}
-
-.nav a {
+.site-nav li a {
+  display: block;
+  background: #cc6b5a;
   color: white;
-  background: #13a4a4;
-  padding: 5px 15px;
-  border-radius: 2px;
-}
-a.featured {
-  background: orange;
+  padding: 0.5em 1em;
 }
 
-.box {
-  padding: 1em 1.5rem;
-  border-radius: 1em;
-  background: lightgrey;
+.nav-right {
+  margin-left: auto;
 }
-.box-small {
-  font-size: 12px;
+.flex {
+  display: flex;
 }
-.box-big {
-  font-size: 18px;
+.column-main {
+  flex: 2;
 }
-
-
-
-.footer {
-  margin-top: 100px;
-  color: #666;
-  background: #ccc;
-  padding: 15px 0;
-  text-align: center;
-  font-size: 14px;
+.tile {
+  padding: 1.5em;
+  background: #fff;
 }
-
-.footer a {
-  color: inherit;
-  text-decoration: underline;
+.column-sidebar {
+  flex: 1;
+}
+.login-form {
+}
+.centered {
+}
+.cost {
+}
+.cost-currency {
+}
+.cost-roubles {
+}
+.cost-kopecks {
+}
+.cta-button {
 }
